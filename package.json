@@ -1,0 +1,14 @@
+{
+  "name": "com.shafir.fsm",
+  "version": "1.0.0",
+  "displayName": "Shafir FSM",
+  "description": "Реализация паттерна 'Состояние'",
+  "unity": "2019.1",
+  "unityRelease": "0b5",
+  "documentationUrl": "https://github.com/JafarovJafar/Shafir-FSM/blob/main/README.md",
+  "author": {
+    "name": "Jafarov Jafar",
+    "email": "jafarovja@yandex.ru",
+    "url": "https://github.com/JafarovJafar"
+  }
+}
