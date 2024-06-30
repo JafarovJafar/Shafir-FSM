@@ -30,7 +30,8 @@ public class SimpleTestEntryPoint : MonoBehaviour
             _collider
         );
 
-        _stateMachine = new SimpleStateMachine();
+        _stateMachine = new SimpleStateMachine(Log);
+        _stateMachine.EnableLogs();
 
         _stateMachine.ChangeState(_state1);
     }
@@ -45,5 +46,14 @@ public class SimpleTestEntryPoint : MonoBehaviour
         {
             _stateMachine.ChangeState(_state2);
         }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            _stateMachine.LogCurrentState();
+        }
+    }
+
+    private void Log(string message)
+    {
+        Debug.Log(message, gameObject);
     }
 }
